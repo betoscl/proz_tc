@@ -1,0 +1,27 @@
+n1 = 0
+n2 = 0
+opt = 0
+def calc (n1,n2,opt):
+
+  if opt == '1':
+    res = n1 + n2
+  elif opt == '2':
+    res = n1 + n2
+  elif opt == '3':
+    res = n1 * n2
+  elif opt == '4':
+    res = n1 / n2
+  else:
+    res = 0
+  print (res)
+  return res
+
+print ("Digite um número:")
+n1 = int(input())  
+print ("Digite outro número:")
+n2 = int(input())  
+print ("Digite uma opção (1-Soma | 2-Substração | 3-Multiplicação | 4-Divisão ):")
+opt = input()  
+resultado = calc(n1,n2,opt)
+print ("O resultado é:", resultado)
+
