@@ -6,7 +6,7 @@ def calc (n1,n2,opt):
   if opt == '1':
     res = n1 + n2
   elif opt == '2':
-    res = n1 + n2
+    res = n1 - n2
   elif opt == '3':
     res = n1 * n2
   elif opt == '4':
