@@ -1,0 +1,21 @@
+cont = 1
+for cont in range(20,0, -1):
+  if cont != 13:
+    print ("Andar:", cont)
+
+print ("------------------")
+cont = 20
+while (cont > 0):
+  if cont != 13:
+    print ("Andar:", cont)
+  
+  cont = cont - 1
+
+print ("------------------")
+cont = 20
+while True:
+  if cont != 13:
+    print ("Andar:", cont)
+  cont = cont - 1
+  if (cont == 0):
+    break
