@@ -1,0 +1,19 @@
+def valida_ano():
+    while True:
+        try:
+            ano = int(input("Digite o ano de nascimento (entre 1922 e 2021): "))
+            if 1922 <= ano <= 2021:
+                return ano
+            else:
+                print("Ano fora do intervalo válido. Tente novamente.")
+        except ValueError:
+            print("Digite um valor numérico válido.")
+
+
+nome_completo = input("Digite seu nome completo: ")
+ano_nasc = valida_ano()
+    
+idade = 2023 - ano_nasc
+    
+print(f"Nome: {nome_completo}")
+print(f"Idade: {idade} anos")
